@@ -1,0 +1,144 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Moral Uncertainty</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+            integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS libs -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+            integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+            crossorigin="anonymous"></script>
+    
+    <!-- Markdown support -->
+    <script>
+        window.MathJax = {
+        tex: {
+            inlineMath: [
+            ['$', '$'],
+            ['\\(', '\\)']
+            ]
+        }
+        }
+    </script>
+    <script async src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+</head>
+<body>
+<!-- 
+<div class="bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a target="_blank" rel="noopener noreferrer" href="https://arxiv.org/abs/2008.02275"><div class="nav-item-header"> </div><div class="nav-link">ETHICS paper</div></a>
+        </li>
+        <li class="nav-item">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.centerforaisafety.org/"><div class="nav-item-header"> </div><div class="nav-link">Center for AI Safety</div></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div> -->
+
+<main role="main" class="container" style="padding-top:15px">
+<div class="row">
+
+<div class="col-lg-7"><div class="card box-shadow card-body">
+    <zero-md id="app" src="main.md" no-shadow></zero-md>
+</div></div>
+
+<div class="col-lg-5"><div class="card box-shadow card-body">
+    <img src="img/animal_philosophers.png">
+    <br>
+
+    <h3>Prizes</h3>
+    <p>We offer a prize pool of up to <b>100,000 USD</b> for high scores on our leaderboard:</p>
+    <ul>
+        <li>First to obtain ≥75% AUROC. (<b>$10,000</b>)</li>
+        <li>First to obtain ≥80% AUROC. (<b>$15,000</b>)</li>
+        <li>First to obtain ≥85% AUROC. (<b>$20,000</b>)</li>
+        <li>First to obtain ≥90% AUROC. (<b>$25,000</b>)</li>
+        <li>First to obtain ≥95% AUROC. (<b>$30,000</b>)</li>
+    </ul>
+    <p>To qualify for a prize, you must make a submission to the leaderboard. If your submission score meets the prize criteria we will contact you to arrange your award.</p>
+
+    <h3>Leaderboard</h3>
+    <p>Leaderboard rankings are determined by AUROC score.</p>
+
+    <table class="table performanceTable"><tbody>
+        <tr>
+            <th>Rank</th><th>Method</th><th>Test</th><th>Hard Test</th><th>AUROC</th>
+        </tr>
+        <!-- <tr class="human-row">
+            <td></td><td>Human Performance<br><a href="https://yonatanbisk.com/PIQA/">(Bisk et al. '20)</a></td><td>94.9</td>
+        </tr> -->
+        <tr>
+            <td>1</td><td><a href='https://github.com/JunShern/moral-uncertainty'>deberta-v3-large</a><p class="institution">Baseline</p></td><td>92.4</td><td>67.9</td><td>69.2</td>
+        </tr>
+        <tr>
+            <td>2</td><td><a href='https://github.com/JunShern/moral-uncertainty'>roberta-large</a><p class="institution">Baseline</p></td><td>91.2</td><td>59.7</td><td>68.3</td>
+        </tr>
+        <tr>
+            <td>3</td><td><a href='https://github.com/JunShern/moral-uncertainty'>bert-base</a><p class="institution">Baseline</p></td><td>86.1</td><td>46.6</td><td>67.0</td>
+        </tr>
+        <tr>
+            <td>4</td><td><a href='https://github.com/JunShern/moral-uncertainty'>bert-large</a><p class="institution">Baseline</p></td><td>84.8</td><td>48.2</td><td>62.3</td>
+        </tr>
+        <tr>
+            <td>5</td><td><a href='https://github.com/JunShern/moral-uncertainty'>albert-xxlarge-v2</a><p class="institution">Baseline</p></td><td>82.0</td><td>46.6</td><td>55.8</td>
+        </tr>
+        <tr class="random-row">
+            <td></td><td>Random Performance</td><td>50.0</td><td>50.0</td><td>50.0</td>
+        </tr>
+    </tbody></table>
+
+    <br>
+    <a href="data/"><button class="btn btn-secondary" style="width:100%">Download dataset</button></a>
+    <br>
+    <a href="#submitting"><button class="btn btn-primary" style="width:100%">Make a submission!</button></a>
+
+    <br>
+    <h3>Questions?</h3>
+    <p>Please email us or submit an issue on <a href="https://github.com/JunShern/moral-uncertainty/issues">GitHub</a>.</p>
+    
+
+</div></div>
+
+</div> <!-- row -->
+<br>
+</main>
+
+<!-- Load the MathJax library AFTER markdown is rendered -->
+<script>
+app.addEventListener('zero-md-rendered', () => {
+    console.log("MAXTHATKASX")
+    let el = document.createElement('script')
+    el.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js'
+    document.head.appendChild(el)
+})
+</script>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 # moral-uncertainty
 
-Dataset and baselines for the `Moral Uncertainty` task. See the [Moral Uncertainty](https://junshern.github.io/moral-uncertainty/) website for details.
+Dataset and baselines for the `Moral Uncertainty` benchmark. See the [Moral Uncertainty](https://junshern.github.io/moral-uncertainty/) website for details.
 
 ## Dataset
 You can download the dataset files from the links in the table:
