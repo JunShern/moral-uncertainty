@@ -15,12 +15,16 @@ The code for training our baseline models is in `moral-uncertainty/baselines`. O
 ```bash
 # bert-base-uncased
 python tune.py --ngpus 1 --model bert-base-uncased --learning_rate 3e-5 --batch_size 16 --nepochs 4 --gradient_acc_steps 1 --verbose
+
 # bert-large-uncased
 python tune.py --ngpus 1 --model bert-large-uncased --learning_rate 5e-6 --batch_size 16 --nepochs 4 --gradient_acc_steps 1 --verbose
-# bert-base-uncased
+
+# roberta-large
 python tune.py --ngpus 1 --model roberta-large --learning_rate 1e-5 --batch_size 16 --nepochs 4 --gradient_acc_steps 1 --verbose
-# bert-base-uncased
+
+# microsoft/deberta-v3-large
 python tune.py --ngpus 1 --model microsoft/deberta-v3-large --learning_rate 1e-5 --batch_size 16 --nepochs 4 --gradient_acc_steps 1 --verbose
-# bert-base-uncased
+
+# microsoft/deberta-v2-xxlarge
 python tune.py --ngpus 1 --model microsoft/deberta-v2-xxlarge --learning_rate 1e-6 --batch_size 8 --nepochs 4 --gradient_acc_steps 1 --verbose
 ```
