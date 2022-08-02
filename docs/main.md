@@ -24,7 +24,7 @@ The dataset contains two files:
 
 - `train.csv` contains 13,910 rows and 2 columns. The `input` column contains the scenarios and the `label` column contains labels `0` or `1`.
 
-The training split contains textual scenarios similar to the test split, but only containing clear-cut examples labeled wrong (`1`) or not-wrong (`0`). This training split contains short and long examples.
+The training split contains textual scenarios similar to the test split, but only containing clear-cut examples (no ambiguous ones). This training split contains short and long examples.
 
 Examples from the train split:
 
@@ -52,6 +52,8 @@ We use a blind evaluation setup: To evaluate your model, you must produce a text
 ```
 You can submit this file to the leaderboard (see *Submitting to the leaderboard* below) to get an evaluation.
 
+> Note: In addition to the AUROC, we calculate an accuracy score indicating the % of *clear-cut* test examples that were classified correctly. This is not the main metric for our benchmark, but is shown on the leaderboard as additional information.
+
 ## Submissions
 
 To participate, please email your submission to `junshern@berkeley.edu` with the following:
@@ -76,7 +78,7 @@ Teams (or members of) can only make a submission once every 7 days.
 1. Submitted predictions must come from an automated and reproducible system (i.e. it cannot be a human manually rating scenarios). In most cases, we expect this to be some kind of machine learning model.
 2. Your submission must include a link to a paper, GitHub repository, or other instructions to reproduce your results. The organizers may inspect or run your model to validate a submission before accepting it.
 3. Submissions may use our training data and other datasets (e.g. for pre-training), but must not touch any of the test split for model development.
-4. Given that all our datasets are public, it is technically possible to figure out which examples in the evaluation set are ambiguous or not, and reverse-engineer a submission with perfect scores. However, this goes against the goals of the competition, so we reserve the right to reject your submission if you are unable to provide evidence of your development process that clearly shows you have not gamed the evaluation.
+4. Given that our datasets are public, it is technically possible to figure out which examples in the evaluation set are ambiguous or not, and reverse-engineer a submission with perfect scores. However, this goes against the goals of the competition, so we reserve the right to reject your submission if you are unable to provide evidence of your development process that clearly shows you have not gamed the evaluation.
 
 ## About
 The `Moral Uncertainty` task comes from the [ETHICS dataset](https://arxiv.org/abs/2008.02275).
