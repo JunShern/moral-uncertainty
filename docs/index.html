@@ -89,31 +89,34 @@
 
     <table class="table performanceTable"><tbody>
         <tr>
-            <th>Rank</th><th>Method</th><th>Test</th><th>Hard Test</th><th>AUROC</th>
+            <th>Rank</th><th>Method</th><th>Accuracy</th><th>AUROC</th>
         </tr>
         <!-- <tr class="human-row">
             <td></td><td>Human Performance<br><a href="https://yonatanbisk.com/PIQA/">(Bisk et al. '20)</a></td><td>94.9</td>
         </tr> -->
         <tr>
-            <td>1</td><td><a href='https://github.com/JunShern/moral-uncertainty'>deberta-v3-large</a><p class="institution">Baseline</p></td><td>92.4</td><td>67.9</td><td>69.2</td>
+            <td>1</td><td><a href='https://arxiv.org/abs/2111.09543'>DeBERTa-v3-large</a><p class="institution">Baseline</p></td><td>92.2</td><td>70.7</td>
         </tr>
         <tr>
-            <td>2</td><td><a href='https://github.com/JunShern/moral-uncertainty'>roberta-large</a><p class="institution">Baseline</p></td><td>91.2</td><td>59.7</td><td>68.3</td>
+            <td>2</td><td><a href='https://arxiv.org/abs/2005.14165'>GPT-3 (Davinci)</a><p class="institution">Baseline</p></td><td>91.8</td><td>69.1</td>
         </tr>
         <tr>
-            <td>3</td><td><a href='https://github.com/JunShern/moral-uncertainty'>bert-base</a><p class="institution">Baseline</p></td><td>86.1</td><td>46.6</td><td>67.0</td>
+            <td>3</td><td><a href='https://arxiv.org/abs/1810.04805'>BERT-base</a><p class="institution">Baseline</p></td><td>89.1</td><td>67.4</td>
         </tr>
         <tr>
-            <td>4</td><td><a href='https://github.com/JunShern/moral-uncertainty'>bert-large</a><p class="institution">Baseline</p></td><td>84.8</td><td>48.2</td><td>62.3</td>
+            <td>4</td><td><a href='https://arxiv.org/abs/1907.11692'>RoBERTa-large</a><p class="institution">Baseline</p></td><td>90.8</td><td>65.2</td>
         </tr>
         <tr>
-            <td>5</td><td><a href='https://github.com/JunShern/moral-uncertainty'>albert-xxlarge-v2</a><p class="institution">Baseline</p></td><td>82.0</td><td>46.6</td><td>55.8</td>
+            <td>5</td><td><a href='https://arxiv.org/abs/1810.04805'>BERT-large</a><p class="institution">Baseline</p></td><td>86.7</td><td>59.2</td>
         </tr>
         <tr>
-            <td>6</td><td><a href='https://github.com/JunShern/moral-uncertainty'>deberta-v2-xxlarge</a><p class="institution">Baseline</p></td><td>70.7</td><td>53.8</td><td>51.5</td>
+            <td>6</td><td><a href='https://arxiv.org/abs/1909.11942'>ALBERT-xxlarge-v2</a><p class="institution">Baseline</p></td><td>82.0</td><td>55.8</td>
+        </tr>
+        <tr>
+            <td>7</td><td><a href='https://arxiv.org/abs/2006.03654'>DeBERTa-v2-xxlarge</a><p class="institution">Baseline</p></td><td>71.8</td><td>52.0</td>
         </tr>
         <tr class="random-row">
-            <td></td><td>Random Performance</td><td>50.0</td><td>50.0</td><td>50.0</td>
+            <td></td><td>Random Performance</td><td>50.0</td><td>50.0</td>
         </tr>
     </tbody></table>
 
