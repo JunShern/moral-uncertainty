@@ -1,5 +1,5 @@
 # Moral Uncertainty
-Different people may have significantly different ethical beliefs on various issues. Advanced machine learning systems should detect when there may be substantial disagreement and use this to inform downstream actions.
+Humans have diverse ethical beliefs on various issues. Advanced machine learning systems should detect when there may be substantial disagreement and use this to inform downstream actions.
 
 The `Moral Uncertainty` benchmark evaluates the ability of models to detect ethical disagreements.
 
