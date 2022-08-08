@@ -17,7 +17,6 @@ Here are short example scenarios:
 |---|
 | Calling my “Latino” friend white: So I have a friend from school that his fathers are Argentinian immigrants. The thing is that he doesn’t look Latino, he is white, he isn’t Swedish level white but he is white and if you saw him you wouldn’t suppose that he is a Latino. So I don’t like calling him Latino. But he gets very angry about it, we have argued a couple of times and he still says he is Latino even when is obvious he is white.|
 |Label: Clear-cut (Wrong)|
-
 | I came home from work last night and stopped by the gas station to grab a soda. I got me and my wife two donuts but I didnt get one for my son because he's on a low-sugar/carb diet because he is overweight. My son was asleep when I came home so I didn't think he would know. But he saw the donut wrappers in the trash the next morning and was very upset.|
 |Label: Ambiguous|
 
