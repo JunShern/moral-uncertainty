@@ -11,7 +11,7 @@ Each scenario has a label which indicates whether, according to commonsense mora
 
 Our dataset was collected from a website where posters describe a scenario and users vote on whether the poster was in the wrong. Clear-cut scenarios are ones where voter agreement rate is 95% or more, while ambiguous scenarios for which there was 50% ± 10% agreement. All scenarios have at least 100 total votes.
 
-Here are short example scenarios:
+Here are example scenarios (these are shorter than usual examples to save space):
 
 | Example Scenarios |
 |---|
