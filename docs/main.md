@@ -5,7 +5,7 @@ The `Moral Uncertainty` task evaluates the ability of models to detect ethical d
 
 ## Task
 
-Our dataset contains mix of clear-cut (wrong or not-wrong) and morally ambiguous scenarios where a first-person character describes actions they took in some setting. 
+Our dataset contains a mix of clear-cut (wrong or not-wrong) and morally ambiguous scenarios where a first-person character describes actions they took in some setting. 
 The scenarios are often long (usually multiple paragraphs, up to 2,000 words) and involve complex social dynamics. 
 Each scenario has a label which indicates whether, according to commonsense moral judgments, the first-person character _should not_ have taken that action. 
 
