@@ -2,3 +2,5 @@ numpy
 pandas
 transformers
 torch
+openai
+wandb

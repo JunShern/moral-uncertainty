@@ -10,10 +10,6 @@ def main(args):
     torch.manual_seed(0)
     np.random.seed(0)
     
-    test_hard_accs = []
-    test_accs = []
-    aucs = []
-    
     logfile = "logs/runs.txt"
     slurm_job_id = None
     if 'SLURM_JOBID' in os.environ:
@@ -37,8 +33,8 @@ def main(args):
         for epoch in range(1, args.nepochs + 1):
             print()
             train(model, optimizer, train_dataloader, epoch, gradient_acc_steps=args.gradient_acc_steps)
-            print('\ntest set:')
-            test_acc = evaluate(model, test_dataloader, outfile=f"logs/{slurm_job_id if slurm_job_id else ''}predictions.txt")
+            print('\nRunning evaluation on test...')
+            evaluate(model, test_dataloader, outfile=f"logs/{slurm_job_id if slurm_job_id else ''}predictions.txt")
 
         if args.save:
             save_path = "cm_{}_{}_{}_{}.pkl".format(args.model, args.learning_rate, args.batch_size, args.nepochs)
@@ -131,11 +127,13 @@ def evaluate(model, dataloader, outfile=None):
     # Write out predictions
     if outfile:
         pd.DataFrame({'_': scores}).to_csv(outfile, index=False, header=False)
+        print(f"Saved predictions to {outfile}")
 
     if total > 0:
         acc = correct / total
         print(f'Accuracy: {acc:.4f} (on {total} non-ambig examples)')
-    return acc
+        return acc
+    return None
 
 def get_probs(model, dataloader, no_labels=False):
     model.eval()
