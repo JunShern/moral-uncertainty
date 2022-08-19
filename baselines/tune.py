@@ -131,7 +131,7 @@ def evaluate(model, dataloader, outfile=None):
     if outfile:
         pd.DataFrame({
             'class': out_class,
-            'out_uncertainty': out_uncertainty,
+            'uncertainty': out_uncertainty,
         }).to_csv(outfile, index=False)
         print(f"Saved predictions to {outfile}")
 
