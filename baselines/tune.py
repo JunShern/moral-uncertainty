@@ -124,9 +124,15 @@ def evaluate(model, dataloader, outfile=None):
             total += 1
     
     scores = torch.sigmoid(torch.tensor(all_logits)) # Convert output logits to 0-1 scores
+    out_class = scores > 0.5 # Binary classification
+    out_uncertainty = np.minimum(scores, 1 - scores) # Uncertainty score is just how close we are to 0.5
+
     # Write out predictions
     if outfile:
-        pd.DataFrame({'_': scores}).to_csv(outfile, index=False, header=False)
+        pd.DataFrame({
+            'class': out_class,
+            'out_uncertainty': out_uncertainty,
+        }).to_csv(outfile, index=False)
         print(f"Saved predictions to {outfile}")
 
     if total > 0:
