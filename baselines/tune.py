@@ -34,7 +34,7 @@ def main(args):
             print()
             train(model, optimizer, train_dataloader, epoch, gradient_acc_steps=args.gradient_acc_steps)
             print('\nRunning evaluation on test...')
-            evaluate(model, test_dataloader, outfile=f"logs/{slurm_job_id if slurm_job_id else ''}predictions.txt")
+            evaluate(model, test_dataloader, outfile=f"logs/{slurm_job_id if slurm_job_id else ''}predictions.csv")
 
         if args.save:
             save_path = "cm_{}_{}_{}_{}.pkl".format(args.model, args.learning_rate, args.batch_size, args.nepochs)
