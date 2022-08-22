@@ -62,7 +62,7 @@ You must submit this file to the leaderboard (see below) to get an evaluation.
 
 ## Submissions
 
-To participate, please email your submission to `junshern@berkeley.edu` with the following:
+To participate, please email your submission to `moraluncertainty@mlsafety.org` with the following:
 - Use email header `Moral Uncertainty Submission`
 - Email text should be
     ```text
