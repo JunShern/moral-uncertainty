@@ -17,7 +17,10 @@ def main(args):
         logfile = f"logs/slurm_{slurm_job_id}.txt"
     print("Storing results in logfile", logfile)
 
-    with open(logfile, "a") as f:
+    if not os.path.exists(os.path.dirname(logfile)):
+        os.mkdir(os.path.dirname(logfile))
+
+    with open(logfile, "a+") as f:
         f.write('{}\n'.format(args))
     data_dir = os.path.abspath(args.data_dir)
     for run in range(args.nruns):
