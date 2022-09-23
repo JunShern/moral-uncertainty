@@ -1,11 +1,11 @@
-# Moral Uncertainty
+# The Moral Uncertainty Research Competition
 Advanced machine learning systems should detect when there may be substantial moral disagreement. If systems can be made to _highly reliably_ detect moral uncertainty, they can be guided to act more cautiously.
 
-The `Moral Uncertainty` task evaluates the ability of models to detect ethical disagreements.
+The **Moral Uncertainty Research Competition** aims to incentivise research towards machine learning models with the ability to detect ethical disagreements.
 
 ## Task
 
-Our dataset contains a mix of clear-cut (wrong or not-wrong) and morally ambiguous scenarios where a first-person character describes actions they took in some setting. 
+We provide a dataset containing a mix of clear-cut (wrong or not-wrong) and morally ambiguous scenarios where a first-person character describes actions they took in some setting. 
 The scenarios are often long (usually multiple paragraphs, up to 2,000 words) and involve complex social dynamics. 
 Each scenario has a label which indicates whether, according to commonsense moral judgments, the first-person character _should not_ have taken that action. 
 
@@ -62,7 +62,7 @@ You must submit this file to the leaderboard (see below) to get an evaluation.
 
 ## Submissions
 
-To participate, please email your submission to `moraluncertainty@mlsafety.org` with the following:
+To make a submission, please email `moraluncertainty@mlsafety.org` with the following:
 - Use email header `Moral Uncertainty Submission`
 - Email text should be
     ```text
@@ -80,15 +80,28 @@ To participate, please email your submission to `moraluncertainty@mlsafety.org` 
 
 Teams (or members of) can only make a submission once every 7 days.
 
+Submission to the leaderboard is not sufficient for prize eligibility. Additional criteria are laid out in the following sections.
+
+## Research Contributions
+
+Unlike other machine learning and data science competitions (e.g. Kaggle) which focus on applied contributions, the Moral Uncertainty Research Competition seeks contributions that push forward research in uncertainty estimation and machine ethics. This means that participants should focus on providing new insights to the field rather than engineering and tuning existing methods.
+
+We rely on the machine learning research community to provide the bar of acceptable research quality. To qualify for a prize, submissions must
+- Have a corresponding accepted paper at reputable machine learning conferences and/or journals, including: ICLR, ICML, NeurIPS, CVPR, ICCV, ECCV, EMNLP, ACL, AAAI, IJCAI, JMLR, and PAMI.
+  
+  (If your paper has been accepted to a venue not on our list, feel free to contact us and we will consider including your venue.)
+- Have at least one team member listed as an author on the relevant paper.
+- The paper does not need to directly address our Moral Uncertainty task, but the prize-winning submission should be a straightforward application of the published method.
+- The paper should be published after January 2022.
+
 ## Rules
 
-1. To encourage meaningful and open research contributions, submissions must come from methods that have a corresponding accepted paper at any of the following machine learning conferences: ICLR, ICML, NeurIPS, CVPR, ICCV, ECCV, EMNLP, ACL.
+1. Your submission must include a link to your paper (meeting the standards described in the previous section) and GitHub repository enabling full reproducibility of your work. All development materials including datasets and code must be publicly available. The organizers may inspect or run your model to validate a submission before accepting it.
 2. Methods must use a single model (no ensembles) that is based on publicly available models (e.g. BERT, RoBERTA, DeBERTa).
 3. Submissions may use our training data but must not touch any of the test split for model development. Additional datasets may be used but must not contain data from this [subreddit](https://www.reddit.com/r/AmItheAsshole/).
-4. Your submission must include a link to a paper, GitHub repository, and/or other instructions that fully explain your methods in a reproducible way. All development materials including datasets and code must also be publicly available. The organizers may inspect or run your model to validate a submission before accepting it.
-5. To qualify for a prize, your method must reliably reproduce results meeting the prize criteria (should not depend on a lucky seed or brute-force training many models to find a lucky one). We reserve the right to withhold prizes for methods deemed unreliable.
-6. Given that our datasets are public, it is technically possible to figure out which examples in the evaluation set are ambiguous or not, and reverse-engineer a submission with perfect scores. However, this goes against the goals of the competition, so we reserve the right to reject your submission if you are unable to provide evidence of your development process that clearly shows you have not gamed the evaluation.
-7. The maximum payout for each new method is $20,000 i.e. If your submission clears more than one prize hurdle with a single method, you will still be awarded $20,000. Multiple submissions with the same method do not qualify for multiple prizes.
+4. Your method must reliably deliver results meeting the prize criteria (should not depend on a lucky seed or brute-force training many models to find a lucky one). We reserve the right to withhold prizes for methods deemed unreliable.
+5. Given that our datasets are public, it is technically possible to figure out which examples in the evaluation set are ambiguous or not, and reverse-engineer a submission with perfect scores. However, this goes against the goals of the competition, so we reserve the right to reject your submission if you are unable to provide evidence of your development process that clearly shows you have not gamed the evaluation.
+6. The maximum payout for each new method is $20,000 i.e. If your submission clears more than one prize hurdle with a single method, you will still be awarded $20,000. Multiple submissions with the same method do not qualify for multiple prizes.
 
 ## Terms and Conditions
 > This contest is sponsored by the FTX Future Fund regranting program. Submissions will be judged by the contest organizers. All decisions of judges are final. We cannot give awards to teams on US terrorist lists or those subject to sanctions. Sponsor may confirm the legality of sending prize money to winners who are residents of countries outside of the United States. The legality of accepting the prize in his or her country is the responsibility of the winners. All taxes are the responsibility of the winners. Employees or current contractors of FTX and contest organizers are not eligible to win prizes. Entrants must be over the age of 18. If a prize-winner does not respond to claim their prize within 30 days of being notified, the prize is forfeited. Competition organizers reserve the right to adjust rules and/or remaining prize distributions after each prize payout. By entering the contest, entrants agree to the Terms & Conditions. Entrants agree that FTX shall not be liable to entrants for any type of damages that arise out of or are related to the contest and/or the prizes. By submitting an entry, entrant represents and warrants that, consistent with the terms of the Terms and Conditions: (a) the entry is entrant’s original work; (b) entrant owns any copyright applicable to the entry; (c) the entry does not violate, in whole or in part, any existing copyright, trademark, patent or any other intellectual property right of any other person, organization or entity; (d) entrant has confirmed and is unaware of any contractual obligations entrant has which may be inconsistent with these Terms and Conditions and the rights entrant is required to have in the entry, including but not limited to any prohibitions, obligations or limitations arising from any current or former employment arrangement entrant may have; (e) entrant is not disclosing the confidential, trade secret or proprietary information of any other person or entity, including any obligation entrant may have in connection arising from any current or former employment, without authorization or a license; and (f) entrant has full power and all legal rights to submit an entry in full compliance with these Terms and Conditions.
