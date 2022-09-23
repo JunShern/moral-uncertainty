@@ -87,7 +87,7 @@ Submission to the leaderboard is not sufficient for prize eligibility. Additiona
 Unlike other machine learning and data science competitions (e.g. Kaggle) which focus on applied contributions, the Moral Uncertainty Research Competition seeks contributions that push forward research in uncertainty estimation and machine ethics. This means that participants should focus on providing new insights to the field rather than engineering and tuning existing methods.
 
 We rely on the machine learning research community to provide the bar of acceptable research quality. To qualify for a prize, submissions must
-- Have a corresponding accepted paper at reputable machine learning conferences and/or journals, including: ICLR, ICML, NeurIPS, CVPR, ICCV, ECCV, EMNLP, ACL, AAAI, IJCAI, JMLR, and PAMI.
+- Have a corresponding accepted paper at reputable machine learning conferences and/or journals, including: ICLR, ICML, NeurIPS, CVPR, ICCV, ECCV, EMNLP, ACL/ARR, AAAI, IJCAI, JMLR, TMLR, and PAMI.
   
   (If your paper has been accepted to a venue not on our list, feel free to contact us and we will consider including your venue.)
 - Have at least one team member listed as an author on the relevant paper.
