@@ -78,9 +78,9 @@ To make a submission, please email `moraluncertainty@mlsafety.org` with the foll
     ```
 - Attach your `predictions.csv` file.
 
-Teams (or members of) can only make a submission once every 7 days.
+Participants may make submissions during their development process to receive an evaluation of their current score. However, teams (or members of) can only make a submission once every 7 days.
 
-Submission to the leaderboard is not sufficient for prize eligibility. Additional criteria are laid out in the following sections.
+The current best submission of each team will be shown on the leaderboard. However, submission to the leaderboard is not sufficient for prize eligibility, and teams must further meet the additional criteria laid out in the following sections. Leaderboard entries that are pending prize eligibility (e.g. submissions made without a paper) will be marked as such.
 
 ## Research Contributions
 
